@@ -1,5 +1,10 @@
 # @title Get-Token-Example
-# 預設在CoLab上執行
+## 預設在CoLab上執行
+# @output
+## 1. 顯示查詢的運動類型的數據
+## 2. 顯示本月已使用的次數
+## 3. 顯示本次查詢所使用的token
+
 import requests
 import json
 #import matplotlib.pyplot as plt    # 用來畫圖的
