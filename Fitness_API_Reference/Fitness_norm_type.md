@@ -78,7 +78,7 @@ title: Fitness Service RESTful API reference (Fitness Norm Type)
 | 404 | 資源不存在 | 無法找到請求資源 | 檢查URL是否有拼寫錯誤 |
 
 ### 使用範例
-- 使用 Curl 查詢全部常模類型的指令如下:
+- 使用 Curl 介接 API 的指令如下:
 ```shell=
 curl "https://{domain}/fitness/norm/type"
 -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"

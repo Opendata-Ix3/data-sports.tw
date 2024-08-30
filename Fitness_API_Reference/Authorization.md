@@ -52,7 +52,6 @@ title: Fitness Service RESTful API reference (Authorization)
   }
 
 ### 錯誤處理
-
 | 錯誤代碼 | 說明 | 可能原因 | 建議解決方案 |
 | -------- | -------- | -------- | -------- |
 | 401 | 未經授權 | 認證失敗 | 檢查帳號和密碼是否正確 |
@@ -60,7 +59,7 @@ title: Fitness Service RESTful API reference (Authorization)
 | 422 | 缺少欄位 | 請求缺少必要欄位 | 檢查參數是否完整 | 
 
 ### 使用範例
-- 使用 Curl 獲取 Token 的指令如下:
+- 使用 Curl 介接 API 的指令如下:
 ```shell=
 curl -X POST "https://api.data-sports.tw/member/login"
 -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"membername\": \"YOUR_MEMBER_NAME_HERE\", \"password\": \"YOUR_MEMBER_PASSWORD_HERE\"}"
