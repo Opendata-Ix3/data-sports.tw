@@ -23,7 +23,7 @@ title: Fitness Service RESTful API reference (Authorization)
 - `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
 ### API
-向下述 API 端點發送 POST 請求以獲取 Token：
+向下述 API 端點發送請求以取得回應：
 - URL: `<https://api.data-sports.tw/member/login`>
 - 方法: `POST`
 - 標頭: `Content-Type: application/json`

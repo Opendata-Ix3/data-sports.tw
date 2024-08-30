@@ -23,13 +23,24 @@ title: Fitness Service RESTful API reference (Fitness Norm Type)
 - `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
 ### API
-向下述 API 端點發送 POST 請求以獲取 Token：
+向下述 API 端點發送請求以取得回應：
 - URL: `<https://{domain}/fitness/norm/type`>
 - 方法: `GET`
 - 標頭: `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
 ### 請求格式
-- 請求參數: 無
+- 請求格式與參數:
+```shell=
+https://{domain}/fitness/norm/type[?version={version}]
+```
+
+| 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
+| -------- | -------- | -------- | -------- | -------- |
+| age | integer | 年齡 |   | 是 |
+| gender | string | 性別 | M: 男, F: 女 | 是 |
+| type | string | 體適能類型 | 由 norm type 取得 | 是 | 
+| measurement | number | 量測值 | 無量測值則 API 回傳全部常模資料 | 否 |
+| version | string | API 版號(yyyy-MM-dd) | 無版號則使用預設版本 | 否 |
 
 ### 回應格式
 - 回應格式與內容:

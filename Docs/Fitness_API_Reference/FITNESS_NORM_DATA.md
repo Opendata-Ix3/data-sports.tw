@@ -23,7 +23,7 @@ title: Fitness Service RESTful API reference (Fitness Norm Data)
 - `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
 ### API
-向下述 API 端點發送 POST 請求以獲取 Token：
+向下述 API 端點發送請求以取得回應：
 - URL: `<https://{domain}/fitness/norm/data`>
 - 方法: `GET`
 - 標頭: `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
@@ -31,7 +31,7 @@ title: Fitness Service RESTful API reference (Fitness Norm Data)
 ### 請求格式
 - 請求格式與參數:
 ```shell=
-https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}]
+https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}&version={version}]
 ```
 
 | 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
@@ -39,7 +39,8 @@ https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measur
 | age | integer | 年齡 |   | 是 |
 | gender | string | 性別 | M: 男, F: 女 | 是 |
 | type | string | 體適能類型 | 由 norm type 取得 | 是 | 
-| measurement | number | 量測值 | 沒有量測值則 API 回傳全部常模資料 | 否 |
+| measurement | number | 量測值 | 無量測值則 API 回傳全部常模資料 | 否 |
+| version | string | API 版號(yyyy-MM-dd) | 無版號則使用預設版本 | 否 |
 
 ### 回應格式
 - 回應格式與內容:
@@ -71,6 +72,6 @@ https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measur
 ### 使用範例
 - 使用 Curl 介接 API 的指令如下:
 ```shell=
-curl "https://{domain}/fitness/norm/data?age=23&gender=M&type=Flexibility&measurement=22"
+curl "https://{domain}/v1/fitness/norm/data?age=23&gender=M&type=Flexibility&measurement=22"
 -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
 ```

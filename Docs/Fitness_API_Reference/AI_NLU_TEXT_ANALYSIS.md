@@ -23,20 +23,21 @@ title: Fitness Service RESTful API reference (AI NLU TEXT ANALYSIS)
 - `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
 ### API
-向下述 API 端點發送 POST 請求以獲取 Token：
+向下述 API 端點發送請求以取得回應：
 - URL: `<https://{domain}/ai/nlu/text_analysis`>
 - 方法: `GET`
 - 標頭: `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
 ### 請求格式
 - 請求格式與參數:
-```shell=https://{domain}/ai/nlu/text_analysis?text={text}[&user_id={user_id}]
+```shell=https://{domain}/ai/nlu/text_analysis?text={text}[&user_id={user_id}&version={version}]
 ```
 
 | 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
 | -------- | -------- | -------- | -------- | -------- |
 | text | string | 文字內容 | API 根據內容提取基本資料 | 是 |
 | user_id | string | 使用者帳號 |  | 否 |
+| version | string | API 版號(yyyy-MM-dd) | 無版號則使用預設版本 | 否 |
 
 ### 回應格式
 - 回應格式與內容:

@@ -31,12 +31,13 @@ title: Fitness Service RESTful API reference (AI NLU QNA)
 ### 請求格式
 - 請求格式與參數:
 ```shell=
-https://{domain}/ai/nlu/qna?question={question}
+https://{domain}/ai/nlu/qna?question={question}[&version=version]
 ```
 
 | 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
 | -------- | -------- | -------- | -------- | -------- |
 | question | string | 問題 |  | 是 |
+| version | string | API 版號(yyyy-MM-dd) | 無版號則使用預設版本 | 否 |
 
 ### 回應格式
 - 回應格式與內容:
