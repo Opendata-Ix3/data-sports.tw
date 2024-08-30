@@ -72,7 +72,6 @@ title: Fitness Service RESTful API reference (Fitness Norm Type)
   }
 
 ### 錯誤處理
-
 | 錯誤代碼 | 說明 | 可能原因 | 建議解決方案 |
 | -------- | -------- | -------- | -------- |
 | 401 | 未經授權 | 認證失敗 | 檢查帳號和密碼是否正確 |
