@@ -39,7 +39,7 @@ https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measur
 | age | integer | 年齡 |   | 是 |
 | gender | string | 性別 | M: 男, F: 女 | 是 |
 | type | string | 體適能類型 | 由 norm type 取得 | 是 | 
-| measurement | number |  | 量測值 | 沒有提供則 API 會回傳全部常模資料 | 否 |
+| measurement | number | 量測值 | 沒有量測值則 API 回傳全部常模資料 | 否 |
 
 ### 回應格式
 - 回應格式與內容:
