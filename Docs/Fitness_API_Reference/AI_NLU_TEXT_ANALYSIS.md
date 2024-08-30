@@ -15,7 +15,7 @@ title: Fitness Service RESTful API reference (AI NLU TEXT ANALYSIS)
 7. [使用範例](#使用範例)
 
 ## 概述
-本指引提供如何與體適能 API 介接說明。透過此NLU 分析文字 API，開發者可以提取使用者輸入文字中的基本資料，包含年齡、性別、身高和體重等資料。在此之前，開發者請先參考 Authorization 章節之說明完成授權與認證。
+本指引提供如何與體適能 API 介接說明。透過此分析文字 API，開發者可以提取使用者輸入文字中的基本資料，包含年齡、性別、身高和體重等資料。在此之前，開發者請先參考 Authorization 章節之說明完成授權與認證。
 
 ## 授權與認證
 使用加值模組 API 之前，需要先取得授權 Token。所有 API 請求必須包含以下標頭：
@@ -33,10 +33,10 @@ title: Fitness Service RESTful API reference (AI NLU TEXT ANALYSIS)
 ```shell=https://{domain}/ai/nlu/text_analysis?text={text}[&user_id={user_id}]
 ```
 
-| 名稱 | 說明 | 備註 | 必要欄位 | 
-| -------- | -------- | -------- | -------- |
-| text | 文字內容 | API 根據內容提取基本資料 | 是 |
-| user_id | 使用者帳號 |  | 否 |
+| 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
+| -------- | -------- | -------- | -------- | -------- |
+| text | string | 文字內容 | API 根據內容提取基本資料 | 是 |
+| user_id | string | 使用者帳號 |  | 否 |
 
 ### 回應格式
 - 回應格式與內容:

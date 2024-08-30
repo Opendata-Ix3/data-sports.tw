@@ -34,12 +34,12 @@ title: Fitness Service RESTful API reference (Fitness Norm Data)
 https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}]
 ```
 
-| 名稱 | 說明 | 備註 | 必要欄位 | 
-| -------- | -------- | -------- | -------- |
-| age | 年齡 |   | 是 |
-| gender | 性別 | M: 男, F: 女 | 是 |
-| type | 體適能類型 | 由 norm type 取得 | 是 | 
-| measurement | 量測值 | 沒有提供則 API 會回傳全部常模資料 | 否 |
+| 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
+| -------- | -------- | -------- | -------- | -------- |
+| age | integer | 年齡 |   | 是 |
+| gender | string | 性別 | M: 男, F: 女 | 是 |
+| type | string | 體適能類型 | 由 norm type 取得 | 是 | 
+| measurement | number |  | 量測值 | 沒有提供則 API 會回傳全部常模資料 | 否 |
 
 ### 回應格式
 - 回應格式與內容:

@@ -34,9 +34,9 @@ title: Fitness Service RESTful API reference (AI NLU QNA)
 https://{domain}/ai/nlu/qna?question={question}
 ```
 
-| 名稱 | 說明 | 備註 | 必要欄位 | 
-| -------- | -------- | -------- | -------- |
-| question | 問題 |  | 是 |
+| 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
+| -------- | -------- | -------- | -------- | -------- |
+| question | string | 問題 |  | 是 |
 
 ### 回應格式
 - 回應格式與內容:
