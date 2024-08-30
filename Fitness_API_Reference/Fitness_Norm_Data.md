@@ -30,7 +30,9 @@ title: Fitness Service RESTful API reference (Fitness Norm Data)
 
 ### 請求格式
 - 請求格式與參數:
-```shell=https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}]
+```shell=
+https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}]
+```
 
 | 名稱 | 說明 | 描述 | 必要欄位 | 
 | -------- | -------- | -------- | -------- |
