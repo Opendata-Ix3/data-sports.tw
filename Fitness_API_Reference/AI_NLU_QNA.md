@@ -31,8 +31,12 @@ title: Fitness Service RESTful API reference (AI NLU QNA)
 ### 請求格式
 - 請求格式與參數:
 ```shell=
-https://{domain}/ai/nlu/qna?organization_id={organization_id}&question={question}
+https://{domain}/ai/nlu/qna?question={question}
 ```
+
+| 名稱 | 說明 | 備註 | 必要欄位 | 
+| -------- | -------- | -------- | -------- |
+| question | 問題 |  | 是 |
 
 ### 回應格式
 - 回應格式與內容:
@@ -57,6 +61,6 @@ https://{domain}/ai/nlu/qna?organization_id={organization_id}&question={question
 ### 使用範例
 - 使用 Curl 介接 API 的指令如下:
 ```shell=
-curl "https://{domain}/ai/nlu/qna?organization_id={organization_id}&question={question}"
+curl "https://{domain}/ai/nlu/qna?question={question}"
 -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
 ```
