@@ -71,5 +71,6 @@ https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measur
 
 ### 使用範例
 - 使用 Curl 介接 API 的指令如下:
-```shell=curl -X GET "https://{domain}/v1/fitness/norm/data?age=23&gender=M&type=Flexibility&measurement=22" -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
+```shell=
+curl -X GET "https://{domain}/v1/fitness/norm/data?age=23&gender=M&type=Flexibility&measurement=22&version=2024-08-15" -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
 ```

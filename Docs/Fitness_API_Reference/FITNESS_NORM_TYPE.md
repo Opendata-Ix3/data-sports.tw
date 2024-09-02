@@ -86,5 +86,6 @@ https://{domain}/fitness/norm/type[?version={version}]
 
 ### 使用範例
 - 使用 Curl 介接 API 的指令如下:
-```shell=curl -X GET "https://{domain}/fitness/norm/type" -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
+```shell=
+curl -X GET "https://{domain}/fitness/norm/type?version=2024-08-15" -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
 ```
