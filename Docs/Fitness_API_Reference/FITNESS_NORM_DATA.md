@@ -30,8 +30,7 @@ title: Fitness Service RESTful API reference (Fitness Norm Data)
 
 ### 請求格式
 - 請求格式與參數:
-```shell=
-https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}&version={version}]
+```shell=https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measurement={measurement}&version={version}]
 ```
 
 | 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
@@ -71,7 +70,5 @@ https://{domain}/fitness/norm/data?age={age}&gender={gender}&type={type}[&measur
 
 ### 使用範例
 - 使用 Curl 介接 API 的指令如下:
-```shell=
-curl "https://{domain}/v1/fitness/norm/data?age=23&gender=M&type=Flexibility&measurement=22"
--H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
+```shell=curl -X GET "https://{domain}/v1/fitness/norm/data?age=23&gender=M&type=Flexibility&measurement=22" -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
 ```
