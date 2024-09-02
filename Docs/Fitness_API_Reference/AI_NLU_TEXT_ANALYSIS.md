@@ -30,7 +30,8 @@ title: Fitness Service RESTful API reference (AI NLU TEXT ANALYSIS)
 
 ### 請求格式
 - 請求格式與參數:
-```shell=https://{domain}/ai/nlu/text_analysis?text={text}[&user_id={user_id}&version={version}]
+```shell=
+https://{domain}/ai/nlu/text_analysis?text={text}[&user_id={user_id}&version={version}]
 ```
 
 | 名稱 | 類型 | 說明 | 備註 | 必要欄位 | 
