@@ -24,7 +24,7 @@ title: Fitness Service RESTful API reference (Fitness Norm Type)
 
 ### API
 向下述 API 端點發送請求以取得回應：
-- URL: `<https://{domain}/fitness/norm/type`>
+- URL: `<https://{domain}/fitness/norm/type>`
 - 方法: `GET`
 - 標頭: `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 

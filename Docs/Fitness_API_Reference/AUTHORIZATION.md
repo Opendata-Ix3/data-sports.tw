@@ -24,7 +24,7 @@ title: Fitness Service RESTful API reference (Authorization)
 
 ### API
 向下述 API 端點發送請求以取得回應：
-- URL: `<https://api.data-sports.tw/member/login`>
+- URL: `<https://api.data-sports.tw/member/login>`
 - 方法: `POST`
 - 標頭: `Content-Type: application/json`
 

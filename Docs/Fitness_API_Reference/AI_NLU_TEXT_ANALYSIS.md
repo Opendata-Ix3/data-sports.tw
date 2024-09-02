@@ -24,7 +24,7 @@ title: Fitness Service RESTful API reference (AI NLU TEXT ANALYSIS)
 
 ### API
 向下述 API 端點發送請求以取得回應：
-- URL: `<https://{domain}/ai/nlu/text_analysis`>
+- URL: `<https://{domain}/ai/nlu/text_analysis>`
 - 方法: `GET`
 - 標頭: `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
@@ -66,6 +66,6 @@ title: Fitness Service RESTful API reference (AI NLU TEXT ANALYSIS)
 ### 使用範例
 - 使用 Curl 介接 API 的指令如下:
 ```shell=
-curl "https://{domain}/ai/nlu/text_analysis?text={text}"
+curl -X GET "https://{domain}/ai/nlu/text_analysis?text={text}&version=2024-08-15"
 -H "accept: application/json" -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}"
 ```

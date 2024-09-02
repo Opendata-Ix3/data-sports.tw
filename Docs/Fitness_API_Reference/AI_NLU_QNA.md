@@ -24,7 +24,7 @@ title: Fitness Service RESTful API reference (AI NLU QNA)
 
 ### API
 向下述 API 端點發送 POST 請求以獲取 Token：
-- URL: `<https://{domain}/ai/nlu/qna`
+- URL: `<https://{domain}/ai/nlu/qna>`
 - 方法: `GET`
 - 標頭: `Authorization: Bearer {YOUR_ACCESS_TOKEN}`
 
