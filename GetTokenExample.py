@@ -1,24 +1,18 @@
-# @title Get-Token-Example
-## 預設在CoLab上執行
-# @output
-## 1. 顯示查詢的運動類型的數據
-## 2. 顯示本月已使用的次數
-## 3. 顯示本次查詢所使用的token
-
+# @title 平臺抓token
 import requests
 import json
-#import matplotlib.pyplot as plt    # 用來畫圖的
+import matplotlib.pyplot as plt    # 用來畫圖的
 
 #### =>> 開始使用前, 請記得設定您的帳號密碼
-MY_MEMBER_NAME = "little test"    # 帳號
-MY_PASSWORD = "big result"    # 密碼
+myMemberName = "little test"    # 帳號
+myPassword = "big result"    # 密碼
 
 
 #### =>> 查詢類別
 #### 開始使用前, 請記得調整您想要查詢的類別名稱
-main_type = "PhysicalFitness"    # 體適能: PhysicalFitness
-type = "ResistanceTraining"    # 阻力訓練: ResistanceTraining
-subtype = ""    # 可能沒有「子類型」
+main_type = "Sport"    # 運動
+type = "Run"    # 跑步
+subtype = "100m"
 data_size = 100    # 每次查詢可以有 [100筆 | 1000筆 | 10000筆] 三種範圍
 
 
@@ -33,15 +27,15 @@ api_base_url = "https://api.data-sports.tw"
 
 # 1. 進行登入動作
 api_url_login = "/member/login"
-my_account_info = {
-    'membername': MY_MEMBER_NAME,
-    'password': MY_PASSWORD
+myAccountInfo = {
+    'membername': myMemberName,
+    'password': myPassword
     }
 #new_url = api_base_url + api_url_login
 #print(new_url)
 
 # 執行登入動作
-response = requests.post(api_base_url + api_url_login, json = my_account_info)
+response = requests.post(api_base_url + api_url_login, json = myAccountInfo)
 
 result_login = None
 # 1.1 檢查回應狀態碼
@@ -56,7 +50,7 @@ else:
     exit(1)
 
 # 1.2 登入成功, 取出toekn
-my_login_toekn = result_login.get('data').get('token')
+myLoginToekn = result_login.get('data').get('token')
 #print(myLoginToekn)
 #myLoginToekn = result_login['token']
 #print(myLoginToekn)
@@ -65,7 +59,7 @@ my_login_toekn = result_login.get('data').get('token')
 # 2. 呼叫查詢資料的API
 # 2.1 準備參數
 api_url = api_base_url + "/data/processed"
-headers = {'Authorization': f"Bearer {my_login_toekn}"}
+headers = {'Authorization': f"Bearer {myLoginToekn}"}
 parameters = {'main_type': main_type, 'type': type, 'subtype': subtype, 'data_size': data_size}
 
 # 執行查詢
@@ -82,9 +76,9 @@ if response.status_code == 200:
     print("查詢結果：\n" + json_string)
 
     ### 要注意 download_count 的當天次數
-    json_string = json.dumps(data['data']['download_count'], indent = 2)
-    print("\n本月已查詢次數：" + json_string)
-    print("\n本次查詢使用的token：" + my_login_toekn)
+    download_count = json.dumps(data['data']['download_count'], indent = 2)
+    print("\n本月已查詢次數：" + download_count)
+    print("\n本次查詢使用的token：" + myLoginToekn)
     print("\n")
 else:
     print(f"Error: {response.status_code}")
@@ -119,3 +113,4 @@ if response.status_code == 200:
     print(data)
 else:
     print("呼叫 API 失敗，狀態碼：", response.status_code)
+
