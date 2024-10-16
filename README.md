@@ -1,4 +1,4 @@
-# 運動數據公益平臺 data-sports.tw 開發者專區
+# 運動數據公益平臺(data-sports.tw)數據應用加值模組 - 開發者專區
 1. 介紹與示範[平臺Token的使用方式](https://github.com/Opendata-Ix3/data-sports.tw/blob/main/GetTokenExample.py)
 2. 介紹與示範[以API來呼叫使用本平臺所提供的AI體適能教練](https://github.com/Opendata-Ix3/data-sports.tw/tree/main/Docs/Fitness_API_Reference)
 <br><br>
