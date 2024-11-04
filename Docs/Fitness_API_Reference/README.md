@@ -8,8 +8,8 @@
 
 ## 測試前提醒
 
-- 若要測試上列各服務，請將各說明內的網址中的 {domain} 代換成 目前的測試環境的domain。
-- 並且把header的Authorization的 {YOUR_ACCESS_TOKEN} 換成自己的token，那個 Bearer 與 一格空白 要記得保留哦~~
+- 若要測試上列各服務，請將各項說明內的網址中 {domain} 代換成**目前的測試環境domain**。
+- 並且把header的Authorization的 {YOUR_ACCESS_TOKEN} 換成自己的token，注意 Bearer 與 token 之間要記得保留一格空白哦~~
 
 例如：
 
@@ -29,7 +29,7 @@ https://qa-api.sportservice.tw/fitness/norm/type
 `Authorization: Bearer abc123456789xyz`
 
 &nbsp;
-- 目前的測試環境的domain：qa-api.sportservice.tw
+- 目前的測試環境domain：qa-api.sportservice.tw
 - 若需要正式domain，請另外與本團隊聯絡，非常感謝。
 
 
