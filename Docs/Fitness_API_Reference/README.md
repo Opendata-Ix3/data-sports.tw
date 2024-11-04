@@ -9,6 +9,7 @@
 ## 測試前提醒
 
 - 若要測試上列各服務，請將各說明內的網址中的 {domain} 代換成 目前的測試環境的domain。
+- 並且把header的Authorization的 {YOUR_ACCESS_TOKEN} 換成自己的token，那個 Bearer 與 一格空白 要記得保留哦~~
 
 例如：
 
@@ -16,15 +17,20 @@
 https://{domain}/fitness/norm/type[?version={version}]
 ```
 
+`Authorization: Bearer {YOUR_ACCESS_TOKEN}`
+
+
 換成
 
 ```shell=
 https://qa-api.sportservice.tw/fitness/norm/type
 ```
 
-目前的測試環境的domain：qa-api.sportservice.tw
+`Authorization: Bearer abc123456789xyz`
 
-若需要正式domain，請另外與本團隊聯絡，非常感謝。
+&nbsp;
+- 目前的測試環境的domain：qa-api.sportservice.tw
+- 若需要正式domain，請另外與本團隊聯絡，非常感謝。
 
 
 <!--   - [ (人工智慧) 查詢問答資料庫 ](AI_NLU_QNA.md)   -->
